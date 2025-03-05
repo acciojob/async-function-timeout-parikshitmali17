@@ -4,5 +4,5 @@ let number=document.getElementById("number").value;
 let output=document.getElementById("output");
 
 async function display(){
-	return await setTimeout(()=>{output.appedChild(text)},number*1000)
+	return await setTimeout(()=>{output.value=text},number*1000)
 }
