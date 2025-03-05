@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 
-document.getElementById("btn").addEventListner('click',()=>{
+document.getElementById("btn").addEventListner('click',async ()=>{
 	let text= document.getElementById("text").value;
 let delay=document.getElementById("delay").value;
 let output=document.getElementById("output");
@@ -18,6 +18,4 @@ let output=document.getElementById("output");
 		output.innerText=text
 	})
 	
-})async function display(){
-	return await setTimeout(()=>{output.value=text},number*1000)
-}
+})
