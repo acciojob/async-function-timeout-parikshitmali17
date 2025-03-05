@@ -14,8 +14,8 @@ let output=document.getElementById("output");
 	delay=parseInt(delay);
 
 	await new Promise((resolve)=>{
-		setTimeout(resolve,delay*1000)
-		output.innerText=text
+		setTimeout(resolve,delay)
+		output.innerText=text;
 	})
 	
 })
