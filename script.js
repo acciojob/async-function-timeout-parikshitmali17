@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 
-document.getElementById("btn").addEventListner('click',async ()=>{
+document.getElementById("btn").addEventListener('click',async ()=>{
 	let text= document.getElementById("text").value;
 let delay=document.getElementById("delay").value;
 let output=document.getElementById("output");
@@ -15,7 +15,7 @@ let output=document.getElementById("output");
 
 	await new Promise((resolve)=>{
 		setTimeout(resolve,delay)
-		output.innerText=text;
+		
 	})
-	
+	output.innerText=text;
 })
